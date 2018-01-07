@@ -304,7 +304,7 @@ KEEP_PROB = 0.5
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    writer = tf.summary.FileWriter('tesnsorboard.folder', sess.graph)
+    writer = tf.summary.FileWriter('tensorboard.folder', sess.graph)
 
     num_examples = len(X_train)
 

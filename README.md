@@ -58,3 +58,14 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 To run the Tensor board, use the following command:
 tensorboard --logdir ./tesnsorboard.folder
+
+
+## to run from scratch:
+git clone https://github.com/vamsi765/CarND-Traffic-Sign-Classifier-Project.git
+cd CarND-Traffic-Sign-Classifier-Project
+wget https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip
+unzip traffic-signs-data.zip -d traffic-signs-data
+rm -f traffic-signs-data.zip
+python3 Traffic_Sign_Classifier.py
+
+
