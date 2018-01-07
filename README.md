@@ -68,4 +68,3 @@ unzip traffic-signs-data.zip -d traffic-signs-data
 rm -f traffic-signs-data.zip
 python3 Traffic_Sign_Classifier.py
 
-
