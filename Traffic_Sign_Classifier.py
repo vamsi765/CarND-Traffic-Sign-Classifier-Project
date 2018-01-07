@@ -117,12 +117,11 @@ print("Number of classes =", n_classes)
 ### Feel free to use as many code cells as needed.
 import matplotlib.pyplot as plt
 # Visualizations will be shown in the notebook.
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
+
 import random
 import numpy as np
 from math import ceil
-import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 index = random.randint(0, len(X_train))
 image = X_train[index].squeeze()
@@ -305,6 +304,8 @@ KEEP_PROB = 0.5
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
+    writer = tf.summary.FileWriter('tesnsorboard.folder', sess.graph)
+
     num_examples = len(X_train)
 
     print("Training...\n")
